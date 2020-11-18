@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{928396B8-76D1-4B93-B69A-893066DF21FA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Clinica_SePriSe_Mora_y_Mendez.My.MyApplication</StartupObject>
+    <RootNamespace>Clinica_SePriSe_Mora_y_Mendez</RootNamespace>
+    <AssemblyName>Clinica SePriSe-Mora y Mendez</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Clinica SePriSe-Mora y Mendez.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Clinica SePriSe-Mora y Mendez.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActualizarEstado.Designer.vb">
+      <DependentUpon>ActualizarEstado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarEstado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion.Designer.vb">
+      <DependentUpon>Administracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministracionCE.designer.vb">
+      <DependentUpon>AdministracionCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdministracionCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgendaTurnos.designer.vb">
+      <DependentUpon>AgendaTurnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgendaTurnos.vb" />
+    <Compile Include="AgregarEstudio.Designer.vb">
+      <DependentUpon>AgregarEstudio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarEstudio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarMedicoTurno.Designer.vb">
+      <DependentUpon>AgregarMedicoTurno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarMedicoTurno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarModificarPlato.designer.vb">
+      <DependentUpon>AgregarModificarPlato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarModificarPlato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarPaciente.Designer.vb">
+      <DependentUpon>AgregarPaciente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarPaciente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarPlato.Designer.vb">
+      <DependentUpon>AgregarPlato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarPlato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlmacenEstudio.Designer.vb">
+      <DependentUpon>AlmacenEstudio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AlmacenEstudio.vb" />
+    <Compile Include="AsignacionMedico.Designer.vb">
+      <DependentUpon>AsignacionMedico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AsignacionMedico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignarPaciente.Designer.vb">
+      <DependentUpon>AsignarPaciente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AsignarPaciente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtencionPaciente.designer.vb">
+      <DependentUpon>AtencionPaciente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AtencionPaciente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtencionPacientes.Designer.vb">
+      <DependentUpon>AtencionPacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AtencionPacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtenderPacienteNormal.Designer.vb">
+      <DependentUpon>AtenderPacienteNormal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AtenderPacienteNormal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtenderPacienteUrgencia.Designer.vb">
+      <DependentUpon>AtenderPacienteUrgencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AtenderPacienteUrgencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompTurno.Designer.vb">
+      <DependentUpon>CompTurno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CompTurno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion.Designer.vb">
+      <DependentUpon>Configuracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crear Dieta.Designer.vb">
+      <DependentUpon>Crear Dieta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Crear Dieta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estudios.designer.vb">
+      <DependentUpon>Estudios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estudios.vb" />
+    <Compile Include="EstudiosFacturacion.Designer.vb">
+      <DependentUpon>EstudiosFacturacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EstudiosFacturacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElegirMedico.Designer.vb">
+      <DependentUpon>ElegirMedico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ElegirMedico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformeLiquidacionSueldo.Designer.vb">
+      <DependentUpon>InformeLiquidacionSueldo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InformeLiquidacionSueldo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioArticuloSector.Designer.vb">
+      <DependentUpon>FormularioArticuloSector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioArticuloSector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioFacturaProv.Designer.vb">
+      <DependentUpon>FormularioFacturaProv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioFacturaProv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioInsumo.Designer.vb">
+      <DependentUpon>FormularioInsumo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioInsumo.vb" />
+    <Compile Include="FormularioMedicamentos.Designer.vb">
+      <DependentUpon>FormularioMedicamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioMedicamentos.vb" />
+    <Compile Include="FormularioPaquete.Designer.vb">
+      <DependentUpon>FormularioPaquete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioPaquete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioPedido.Designer.vb">
+      <DependentUpon>FormularioPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioPedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioProveedor.Designer.vb">
+      <DependentUpon>FormularioProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioRemitoProveedor.Designer.vb">
+      <DependentUpon>FormularioRemitoProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioRemitoProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaVisitaPeriodEnfermeria.Designer.vb">
+      <DependentUpon>frmAltaVisitaPeriodEnfermeria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAltaVisitaPeriodEnfermeria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComprobAltaEnfermeria.Designer.vb">
+      <DependentUpon>frmComprobAltaEnfermeria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmComprobAltaEnfermeria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEgresoPacEnfermeria.Designer.vb">
+      <DependentUpon>frmEgresoPacEnfermeria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEgresoPacEnfermeria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuEnfermeria.Designer.vb">
+      <DependentUpon>frmMenuEnfermeria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuEnfermeria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRondaEnfermeria.Designer.vb">
+      <DependentUpon>frmRondaEnfermeria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRondaEnfermeria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVisPeriodEnfermeria.Designer.vb">
+      <DependentUpon>frmVisPeriodEnfermeria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVisPeriodEnfermeria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrillaFarmacia1.designer.vb">
+      <DependentUpon>GrillaFarmacia1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GrillaFarmacia1.vb" />
+    <Compile Include="Guardia.Designer.vb">
+      <DependentUpon>Guardia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Guardia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoriaClinicaCE.designer.vb">
+      <DependentUpon>HistoriaClinicaCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HistoriaClinicaCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresoMedicoCE.designer.vb">
+      <DependentUpon>IngresoMedicoCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IngresoMedicoCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresoPaciente.designer.vb">
+      <DependentUpon>IngresoPaciente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IngresoPaciente.vb" />
+    <Compile Include="InsumosMedicamentos.Designer.vb">
+      <DependentUpon>InsumosMedicamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsumosMedicamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InternacionPaciente.Designer.vb">
+      <DependentUpon>InternacionPaciente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InternacionPaciente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Liquidacion de Honorarios.designer.vb">
+      <DependentUpon>Liquidacion de Honorarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Liquidacion de Honorarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaEspera.Designer.vb">
+      <DependentUpon>ListaEspera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaEspera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaEsperaCE.designer.vb">
+      <DependentUpon>ListaEsperaCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaEsperaCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Dieta.Designer.vb">
+      <DependentUpon>Menu Dieta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Dieta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuFarmacia1.designer.vb">
+      <DependentUpon>MenuFarmacia1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuFarmacia1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar Dieta.Designer.vb">
+      <DependentUpon>Modificar Dieta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar Dieta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarInsumo.Designer.vb">
+      <DependentUpon>ModificarInsumo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarInsumo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarMedicamento.Designer.vb">
+      <DependentUpon>ModificarMedicamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarMedicamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarMedicoTurno.Designer.vb">
+      <DependentUpon>ModificarMedicoTurno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarMedicoTurno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarPlato.Designer.vb">
+      <DependentUpon>ModificarPlato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarPlato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulo.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdendeCompra1.Designer.vb">
+      <DependentUpon>OrdendeCompra1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OrdendeCompra1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdendeCompra2.Designer.vb">
+      <DependentUpon>OrdendeCompra2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OrdendeCompra2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdendeCompraFinal.Designer.vb">
+      <DependentUpon>OrdendeCompraFinal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OrdendeCompraFinal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receta.Designer.vb">
+      <DependentUpon>Receta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarArtOrdCompra.Designer.vb">
+      <DependentUpon>RegistrarArtOrdCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarArtOrdCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Solicitud de Turno.designer.vb">
+      <DependentUpon>Solicitud de Turno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitud de Turno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuministrarPaciente.Designer.vb">
+      <DependentUpon>SuministrarPaciente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuministrarPaciente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TurnoGuardia.Designer.vb">
+      <DependentUpon>TurnoGuardia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TurnoGuardia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ActualizarEstado.resx">
+      <DependentUpon>ActualizarEstado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion.resx">
+      <DependentUpon>Administracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministracionCE.resx">
+      <DependentUpon>AdministracionCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgendaTurnos.resx">
+      <DependentUpon>AgendaTurnos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarEstudio.resx">
+      <DependentUpon>AgregarEstudio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarMedicoTurno.resx">
+      <DependentUpon>AgregarMedicoTurno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarModificarPlato.resx">
+      <DependentUpon>AgregarModificarPlato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarPaciente.resx">
+      <DependentUpon>AgregarPaciente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarPlato.resx">
+      <DependentUpon>AgregarPlato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlmacenEstudio.resx">
+      <DependentUpon>AlmacenEstudio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignacionMedico.resx">
+      <DependentUpon>AsignacionMedico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignarPaciente.resx">
+      <DependentUpon>AsignarPaciente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AtencionPaciente.resx">
+      <DependentUpon>AtencionPaciente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AtencionPacientes.resx">
+      <DependentUpon>AtencionPacientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AtenderPacienteNormal.resx">
+      <DependentUpon>AtenderPacienteNormal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AtenderPacienteUrgencia.resx">
+      <DependentUpon>AtenderPacienteUrgencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompTurno.resx">
+      <DependentUpon>CompTurno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion.resx">
+      <DependentUpon>Configuracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crear Dieta.resx">
+      <DependentUpon>Crear Dieta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estudios.resx">
+      <DependentUpon>Estudios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstudiosFacturacion.resx">
+      <DependentUpon>EstudiosFacturacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElegirMedico.resx">
+      <DependentUpon>ElegirMedico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioArticuloSector.resx">
+      <DependentUpon>FormularioArticuloSector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioFacturaProv.resx">
+      <DependentUpon>FormularioFacturaProv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioInsumo.resx">
+      <DependentUpon>FormularioInsumo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioMedicamentos.resx">
+      <DependentUpon>FormularioMedicamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioPaquete.resx">
+      <DependentUpon>FormularioPaquete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioPedido.resx">
+      <DependentUpon>FormularioPedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioProveedor.resx">
+      <DependentUpon>FormularioProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioRemitoProveedor.resx">
+      <DependentUpon>FormularioRemitoProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaVisitaPeriodEnfermeria.resx">
+      <DependentUpon>frmAltaVisitaPeriodEnfermeria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComprobAltaEnfermeria.resx">
+      <DependentUpon>frmComprobAltaEnfermeria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEgresoPacEnfermeria.resx">
+      <DependentUpon>frmEgresoPacEnfermeria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuEnfermeria.resx">
+      <DependentUpon>frmMenuEnfermeria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRondaEnfermeria.resx">
+      <DependentUpon>frmRondaEnfermeria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisPeriodEnfermeria.resx">
+      <DependentUpon>frmVisPeriodEnfermeria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GrillaFarmacia1.resx">
+      <DependentUpon>GrillaFarmacia1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guardia.resx">
+      <DependentUpon>Guardia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoriaClinicaCE.resx">
+      <DependentUpon>HistoriaClinicaCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformeLiquidacionSueldo.resx">
+      <DependentUpon>InformeLiquidacionSueldo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresoMedicoCE.resx">
+      <DependentUpon>IngresoMedicoCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresoPaciente.resx">
+      <DependentUpon>IngresoPaciente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsumosMedicamentos.resx">
+      <DependentUpon>InsumosMedicamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InternacionPaciente.resx">
+      <DependentUpon>InternacionPaciente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Liquidacion de Honorarios.resx">
+      <DependentUpon>Liquidacion de Honorarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaEspera.resx">
+      <DependentUpon>ListaEspera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaEsperaCE.resx">
+      <DependentUpon>ListaEsperaCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Dieta.resx">
+      <DependentUpon>Menu Dieta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuFarmacia1.resx">
+      <DependentUpon>MenuFarmacia1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar Dieta.resx">
+      <DependentUpon>Modificar Dieta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarInsumo.resx">
+      <DependentUpon>ModificarInsumo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarMedicamento.resx">
+      <DependentUpon>ModificarMedicamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarMedicoTurno.resx">
+      <DependentUpon>ModificarMedicoTurno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarPlato.resx">
+      <DependentUpon>ModificarPlato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdendeCompra1.resx">
+      <DependentUpon>OrdendeCompra1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdendeCompra2.resx">
+      <DependentUpon>OrdendeCompra2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdendeCompraFinal.resx">
+      <DependentUpon>OrdendeCompraFinal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receta.resx">
+      <DependentUpon>Receta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarArtOrdCompra.resx">
+      <DependentUpon>RegistrarArtOrdCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solicitud de Turno.resx">
+      <DependentUpon>Solicitud de Turno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuministrarPaciente.resx">
+      <DependentUpon>SuministrarPaciente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TurnoGuardia.resx">
+      <DependentUpon>TurnoGuardia.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Final.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
